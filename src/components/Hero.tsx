@@ -140,7 +140,7 @@ export default function Hero() {
               <div className="hero-photo-cutout">
                 <img
                   src="/profile.png"
-                  alt="Haris Prabu"
+                  alt="Haris Prabu — Software Developer"
                   className="w-full h-full object-cover object-top"
                 />
                 {/* Bottom soft gradient dissolve */}
@@ -171,7 +171,7 @@ export default function Hero() {
             <div className="hero-photo-cutout-mobile">
               <img
                 src="/profile.png"
-                alt="Haris Prabu"
+                alt="Haris Prabu — Software Developer"
                 className="w-full h-full object-cover object-top"
               />
               <div className="absolute bottom-0 left-0 right-0 h-14 bg-gradient-to-t from-bg to-transparent pointer-events-none" />
