@@ -2,20 +2,12 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useIntro } from '../context/IntroContext'
 
-/* ─── 3 Rotating Proverbs ─── */
+/* ─── 4 Rotating Proverbs ─── */
 const proverbs = [
-  {
-    text: 'Discipline wins always.',
-    category: 'Personal Creed',
-  },
-  {
-    text: 'Pressure is a privilege.',
-    category: 'Mindset',
-  },
-  {
-    text: 'Giving up is not in the blood.',
-    category: 'Resilience',
-  },
+  'Discipline wins always.',
+  'Pressure is a privilege.',
+  'Giving up is not in the blood.',
+  'Every expert was once a beginner.',
 ]
 
 /* ─── Cinematic ease curve ─── */
@@ -74,10 +66,7 @@ export default function HeroQuote() {
               transition={{ duration: 0.45, ease: EASE_CINE }}
             >
               <p className="text-xs sm:text-[13px] text-text-primary font-medium leading-snug italic">
-                "{proverbs[currentProverb].text}"
-              </p>
-              <p className="text-[10px] text-primary font-semibold tracking-wider uppercase mt-1">
-                — {proverbs[currentProverb].category}
+                "{proverbs[currentProverb]}"
               </p>
             </motion.div>
           </AnimatePresence>
