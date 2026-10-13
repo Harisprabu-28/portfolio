@@ -103,7 +103,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   background-color: transparent !important;
-  text-shadow: 0 4px 28px rgba(250, 204, 21, 0.35);
+  /* text-shadow removed — eliminates yellow underline glow beneath name */
 }
 
 /* ===== Center-Out Clip Path Reveal ===== */

@@ -5,16 +5,16 @@ import { useIntro } from '../context/IntroContext'
 /* ─── 3 Rotating Proverbs ─── */
 const proverbs = [
   {
-    text: 'Every expert was once a beginner.',
-    category: 'Learning Mindset',
+    text: 'Discipline wins always.',
+    category: 'Personal Creed',
   },
   {
-    text: 'First, solve the problem. Then, write the code.',
-    category: 'Engineering Philosophy',
+    text: 'Pressure is a privilege.',
+    category: 'Mindset',
   },
   {
-    text: 'Make it work, make it right, make it scalable.',
-    category: 'Software Craftsmanship',
+    text: 'Giving up is not in the blood.',
+    category: 'Resilience',
   },
 ]
 
