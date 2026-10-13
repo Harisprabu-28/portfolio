@@ -34,29 +34,9 @@ export default function HeroQuote() {
       animate={introComplete ? { opacity: 1, x: 0 } : { opacity: 0, x: -25 }}
       transition={{ delay: introComplete ? taglineDelay : 0, duration: 0.4, ease: 'easeOut' }}
     >
-      <div className="flex items-start gap-3 p-3 sm:p-3.5 rounded-xl bg-[#141414]/75 border border-white/10 backdrop-blur-md shadow-2xl hover:border-primary/40 transition-colors">
-        {/* Animated Glowing Indicator & Step Bars */}
-        <div className="mt-1 flex flex-col items-center gap-1.5 flex-shrink-0">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
-          </span>
-          <div className="flex flex-col gap-1 mt-1">
-            {proverbs.map((_, i) => (
-              <div
-                key={i}
-                className={`w-1 transition-all duration-500 rounded-full ${
-                  currentProverb === i
-                    ? 'h-3 bg-primary shadow-[0_0_8px_rgba(250,204,21,0.5)]'
-                    : 'h-1 bg-white/20'
-                }`}
-              />
-            ))}
-          </div>
-        </div>
-
+      <div className="p-3 sm:p-3.5 rounded-xl bg-[#141414]/75 border border-white/10 backdrop-blur-md shadow-2xl hover:border-primary/40 transition-colors">
         {/* Animated Proverb Text */}
-        <div className="flex-1 overflow-hidden min-h-[50px] flex flex-col justify-center">
+        <div className="overflow-hidden min-h-[50px] flex flex-col justify-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentProverb}
